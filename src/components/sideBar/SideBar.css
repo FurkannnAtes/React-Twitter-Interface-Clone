@@ -1,0 +1,188 @@
+ .side-bar-wrapper {
+     flex: 5;
+     background-color: #000;
+
+     padding-right: 20px;
+
+ }
+
+ .side-bar-container {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ .navbar {
+     padding: 10px 0 0 100px;
+     font-size: 2rem;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+
+
+ }
+
+ .brand:hover {
+     cursor: pointer;
+ }
+
+ .nav-item {
+     display: flex;
+     align-items: center;
+
+
+ }
+
+ .nav-item:hover {
+     cursor: pointer;
+ }
+
+ .navbar span {
+     font-size: 20px;
+     padding: 0 0 0 15px;
+ }
+
+ .nav-item button {
+     border: none;
+     width: 230px;
+     height: 50px;
+     background-color: rgb(29, 161, 242);
+     color: white;
+     font-size: 1.2rem;
+     border-radius: 25px;
+     -webkit-border-radius: 25px;
+     -moz-border-radius: 25px;
+     -ms-border-radius: 25px;
+     -o-border-radius: 25px;
+ }
+
+ .nav-item button img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     display: none;
+ }
+
+ .nav-item button:hover {
+     background-color: #0a81ca;
+     cursor: pointer;
+ }
+
+ .avatar {
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     margin-right: 5px;
+ }
+
+ .user-info {
+     padding: 0 20px 0 100px;
+     display: flex;
+     align-items: center;
+     font-size: 14px;
+
+     margin: 10px 0;
+
+
+ }
+
+ .user-info:hover {
+     cursor: pointer;
+ }
+
+ .user-name {
+     font-weight: bold;
+     display: flex;
+
+ }
+
+ .user-hotmail {
+     color: rgb(113, 128, 123);
+
+ }
+
+ .user-info-dots {
+
+     font-size: 1.5rem;
+     margin-left: auto;
+
+ }
+
+ @media only screen and (max-width: 1262px) {
+     .side-bar-wrapper {
+         flex: 2;
+         padding: 0;
+
+     }
+
+     .side-bar-container {
+         align-items: center;
+     }
+
+     .navbar {
+         padding: 0px;
+         margin: 0;
+         text-align: center;
+
+
+
+
+
+
+     }
+
+     .user-info {
+         padding: 0px;
+         margin: 0;
+
+
+
+
+     }
+
+     .nav-item {
+         justify-content: center;
+     }
+
+     .nav-item span {
+         display: none;
+
+     }
+
+     .nav-item button {
+         width: 50px;
+         padding: 0;
+     }
+
+     .nav-item button img {
+         display: block;
+     }
+
+     .user-text {
+         display: none;
+     }
+
+     .user-info-dots {
+
+         display: none;
+
+     }
+
+     .user-info {
+         justify-content: center;
+         margin: 0;
+         padding: 0;
+
+     }
+
+     .user-info img {
+         margin: 0 auto;
+     }
+ }

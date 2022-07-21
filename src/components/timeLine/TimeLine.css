@@ -1,0 +1,115 @@
+.timeline-wrapper {
+    flex: 7;
+    background-color: black;
+    position: relative;
+
+    overflow-y: scroll;
+
+
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.timeline-header {
+    position: relative;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 55;
+
+}
+
+.timeline-header i {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.search-bar {
+    background-color: rgb(59, 63, 70);
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 5px;
+    padding-left: 50px;
+    font-size: 20px;
+    color: rgb(211, 211, 211);
+
+}
+
+.search-bar::placeholder {
+    color: rgb(211, 211, 211);
+
+}
+
+.trends-header {
+    font-size: 1.4rem;
+    padding: 0 0 15px 15px;
+}
+
+.timeline-trends {
+    background-color: rgb(38, 41, 48);
+    border-radius: 25px;
+    padding: 30px 0;
+    margin: 0 30px;
+    width: 360px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.follows-header {
+    font-size: 1.4rem;
+    padding: 0 0 15px 15px;
+}
+
+.timeline-follows {
+    background-color: rgb(38, 41, 48);
+    border-radius: 25px;
+    padding: 30px 0;
+    margin: 0 30px;
+    width: 360px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+@media only screen and (max-width: 1120px) {
+    .timeline-wrapper {
+        flex: 3;
+    }
+
+    .timeline-header,
+    .timeline-trends,
+    .timeline-follows {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .timeline-wrapper {
+        flex: 0;
+    }
+
+
+}
